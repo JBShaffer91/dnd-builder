@@ -1,0 +1,38 @@
+body {
+  background-color: #c99868;
+  color: #27221f;
+  text-align: center;
+  font-family: "Garamond", "Times New Roman", serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.col {
+  float: left;
+  margin: 0 1%;
+  padding: 1%;
+  border: 1px solid #27221f;
+  border-radius: 5px;
+  background-color: #f2e8e1;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .col {
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .col {
+    width: 100%;
+  }
+}
