@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>DnD Character Builder</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <link href="css/bootstrap.css" rel ="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>DnD Character Builder</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Character Name</h2>
+        <input type="text" id="characterName" name="characterName" placeholder="Character Name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Character Class</h2>
+        <select id="characterClass" name="characterClass">
+          <option value="barbarian">Barbarian</option>
+          <option value="bard">Bard</option>
+          <option value="cleric">Cleric</option>
+          <option value="druid">Druid</option>
+          <option value="fighter">Fighter</option>
+          <option value="monk">Monk</option>
+          <option value="paladin">Paladin</option>
+          <option value="ranger">Ranger</option>
+          <option value="rogue">Rogue</option>
+          <option value="sorcerer">Sorcerer</option>
+          <option value="warlock">Warlock</option>
+          <option value="wizard">Wizard</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Race</h2>
+        <select id="characterRace" name="characterRace">
+          <option value="dragonborn">Dragonborn</option>
+          <option value="dwarf">Dwarf</option>
+          <option value="elf">Elf</option>
+          <option value="gnome">Gnome</option>
+          <option value="half-elf">Half-Elf</option>
+          <option value="half-orc">Half-Orc</option>
+          <option value="halfling">Halfling</option>
+          <option value="human">Human</option>
+          <option value="tiefling">Tiefling</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Background</h2>
+        <select id="characterBackground" name="characterBackground">
+          <option value="acolyte">Acolyte</option>
+          <option value="charlatan">Charlatan</option>
+          <option value="criminal">Criminal</option>
+          <option value="entertainer">Entertainer</option>
+          <option value="folk-hero">Folk Hero</option>
+          <option value="guild-artisan">Guild Artisan</option>
+          <option value="hermit">Hermit</option>
+          <option value="noble">Noble</option>
+          <option value="outlander">Outlander</option>
+          <option value="sage">Sage</option>
+          <option value="sailor">Sailor</option>
+          <option value="soldier">Soldier</option>
+          <option value="urchin">Urchin</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Alignment</h2>
+        <select id="characterAlignment" name="characterAlignment">
+          <option value="lawful-good">Lawful Good</option>
+          <option value="neutral-good">Neutral Good</option>
+          <option value="chaotic-good">Chaotic Good</option>
+          <option value="lawful-neutral">Lawful Neutral</option>
+          <option value="true-neutral">True Neutral</option>
+          <option value="chaotic-neutral">Chaotic Neutral</option>
+          <option value="lawful-evil">Lawful Evil</option>
+          <option value="neutral-evil">Neutral Evil</option>
+          <option value="chaotic-evil">Chaotic Evil</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Experience Points</h2>
+        <input type="number" id="characterXP" name="characterXP" placeholder="Experience Points">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Strength</h2>
+        <input type="number" id="characterStrength" name="characterStrength" placeholder="Strength">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Dexterity</h2>
+        <input type="number" id="characterDexterity" name="characterDexterity" placeholder="Dexterity">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Constitution</h2>
+        <input type="number" id="characterConstitution" name="characterConstitution" placeholder="Constitution">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Intelligence</h2>
+        <input type="number" id="characterIntelligence" name="characterIntelligence" placeholder="Intelligence">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Wisdom</h2>
+        <input type="number" id="characterWisdom" name="characterWisdom" placeholder="Wisdom">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Charisma</h2>
+        <input type="number" id="characterCharisma" name="characterCharisma" placeholder="Charisma">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Armor Class</h2>
+        <input type="number" id="characterAC" name="characterAC" placeholder="Armor Class">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Initiative</h2>
+        <input type="number" id="characterInitiative" name="characterInitiative" placeholder="Initiative">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Speed</h2>
+        <input type="number" id="characterSpeed" name="characterSpeed" placeholder="Speed">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Hit Points</h2>
+        <input type="number" id="characterHP" name="characterHP" placeholder="Hit Points">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Hit Dice</h2>
+        <input type="number" id="characterHD" name="characterHD" placeholder="Hit Dice">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Personality Traits</h2>
+        <textarea id="characterPersonalityTraits" name="characterPersonalityTraits" placeholder="Personality Traits"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Ideals</h2>
+        <textarea id="characterIdeals" name="characterIdeals" placeholder="Ideals"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Bonds</h2>
+        <textarea id="characterBonds" name="characterBonds" placeholder="Bonds"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Flaws</h2>
+        <textarea id="characterFlaws" name="characterFlaws" placeholder="Flaws"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Features and Traits</h2>
+        <textarea id="characterFeatures" name="characterFeatures" placeholder="Features and Traits"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Proficiencies and Languages</h2>
+        <textarea id="characterProficiencies" name="characterProficiencies" placeholder="Proficiencies and Languages"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Equipment</h2>
+        <textarea id="characterEquipment" name="characterEquipment" placeholder="Equipment"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Spells</h2>
+        <textarea id="characterSpells" name="characterSpells" placeholder="Spells"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Notes</h2>
+        <textarea id="characterNotes" name="characterNotes" placeholder="Notes"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <input type="submit" value="Submit">
+      </div>
+    </div>
+  </form>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
